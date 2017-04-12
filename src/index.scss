@@ -1,5 +1,9 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+// the whole kit and caboodle.  Refactor later.
+@import '../node_modules/foundation-sites/scss/foundation.scss';
+
+// base styles
+@import '../src/styles/colors.scss';
+@import '../src/styles/type.scss';
+
+// pages
+@import '../src/pages/homepage/homepage.scss';
