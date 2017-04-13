@@ -1,1 +1,20 @@
 $sans-serif: Helvetica, Arial, sans-serif;
+
+a {
+  @include link-transition(350ms);
+
+  color: $blue;
+  text-decoration: none;
+  outline: 0;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $pink;
+  }
+
+  &:visted {
+    color: $blue;
+  }
+
+}
