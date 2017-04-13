@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from '../src/pages/homepage/homepage';
+import Form from '../src/components/form/form';
 import './index.css';
 
 ReactDOM.render(
-  <Home />,
+
+  <div className="main" >
+    <Form />
+  </div>,
   document.getElementById('root')
 );
