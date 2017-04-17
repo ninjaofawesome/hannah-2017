@@ -5,8 +5,11 @@ class Form extends Component {
   render(){
     return(
       <div className="greeting-form">
-        <h1> This will be your form. </h1>
-        <a href="#">And this is a link</a>
+        <h1>Hello! </h1>
+        <form action="GET">
+          <input type="text" value="What's your name?" />
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     );
   }
