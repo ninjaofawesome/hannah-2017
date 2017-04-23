@@ -1,0 +1,54 @@
+{
+  "countries": [
+    {
+      "country": "Mexico",
+      "cities": ["Cancun", "Tulum"],
+      "dates": [2010]
+    },
+    {
+      "country": "Canada",
+      "cities": ["Montreal", "Niagara Falls"],
+      "dates": [2011, 2012, 2016]
+    },
+    {
+      "country": "Costa Rica",
+      "cities": ["Liberia", "Tamarindo Bay"],
+      "dates": [2014]
+    },
+    {
+      "country": "El Salvador",
+      "cities": ["San Salvador"],
+      "dates": [2014, 2015]
+    },
+    {
+      "country": "Belize",
+      "cities": ["Caye Caulker", "San Ignacio", "Belize City"],
+      "dates": [2015]
+    },
+    {
+      "country": "Guatemala",
+      "cities": ["Tikal"],
+      "dates": [2015]
+    },
+    {
+      "country": "Colombia",
+      "cities": ["Bogota", "Cartagena"],
+      "dates": [2016]
+    },
+    {
+      "country": "China",
+      "cities": ["Shanghai"],
+      "dates": [2016]
+    },
+    {
+      "country": "Thailand",
+      "cities": ["Koh Lanta", "Chiang Mai", "Bangkok"],
+      "dates": [2016]
+    },
+    {
+      "country": "Dominican Republic",
+      "cities": ["Sosua", "Cabarete", "Puerto Plata"],
+      "dates": [2017]
+    }
+  ]
+}
