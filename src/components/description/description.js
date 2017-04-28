@@ -1,19 +1,25 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Sidebar from '../sidebar/sidebar';
-import { descriptionWork } from './description-work/description-work';
 
 
 class Description extends Component {
   render() {
+    const countries=this.props.items;
+
     return(
       <div className="description-container">
         <h2> This is a description</h2>
-        <p>{descriptionWork}</p>
-        <Sidebar />
+        <Sidebar
+        data={countries}
+        direction="right" />
       </div>
     );
   }
 
+}
+
+Description.propTypes = {
+  items: PropTypes.shape({})
 }
 
 export default Description;
