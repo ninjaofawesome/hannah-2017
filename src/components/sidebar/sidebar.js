@@ -16,16 +16,16 @@ class Sidebar extends Component {
 
     if (countries) {
       eachItem = countries.map((item, index) => {
-        return <li key={index} className={`${className}__list-item`}>{item.country}</li>;
+        return <li key={index} className={`${className}-sidebar__list-item`}>{item.country}</li>;
       });
     }
 
     if (jobs) {
       eachItem = jobs.map((item, index) => {
         return(
-          <li key={index} className={`${className}__list-item`}>
-            <span className={`${className}__position`}>{item.title}</span>
-            <span className={`${className}__company`}>{item.company}</span>
+          <li key={index} className={`${className}-sidebar__list-item`}>
+            <span className={`${className}-sidebar__position`}>{item.title}</span>
+            <span className={`${className}-sidebar__company`}>{item.company}</span>
           </li>
         );
       });
@@ -40,9 +40,9 @@ class Sidebar extends Component {
     const className = this.props.className;
 
     return(
-      <div className={`${className}__title`}>
+      <div className={`${className}-sidebar__title`}>
         <h2> This is a sidebar list.</h2>
-        <ul className={`${className}__list`}>
+        <ul className={`${className}-sidebar__list`}>
           {this.listItems(data)}
         </ul>
       </div>
