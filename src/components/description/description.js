@@ -4,14 +4,15 @@ import Sidebar from '../sidebar/sidebar';
 
 class Description extends Component {
   render() {
-    const countries=this.props.items;
+    const items=this.props.items;
+    const sidebarClass=this.props.className;
 
     return(
       <div className="description-container">
         <h2> This is a description</h2>
         <Sidebar
-        data={countries}
-        direction="right" />
+        data={items}
+        className={sidebarClass} />
       </div>
     );
   }
@@ -19,7 +20,8 @@ class Description extends Component {
 }
 
 Description.propTypes = {
-  items: PropTypes.shape({})
+  items: PropTypes.shape({}),
+  className: PropTypes.string
 }
 
 export default Description;

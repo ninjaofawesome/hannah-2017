@@ -1,0 +1,16 @@
+{
+  "jobs": [
+    {
+      "company": "Nifty Thrifty",
+      "title": "Project Manager"
+    },
+    {
+      "company": "Soon Beauty Lab",
+      "title": "Hairdresser"
+    },
+    {
+      "company": "Various",
+      "title": "Freelance Technical Designer"
+    }
+  ]
+}
