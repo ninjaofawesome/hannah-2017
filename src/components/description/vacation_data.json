@@ -50,5 +50,7 @@
       "cities": ["Sosua", "Cabarete", "Puerto Plata"],
       "dates": [2017]
     }
-  ]
+  ],
+  "copy": "<p>I'm also a voracious traveller. I've been to 47 out of 50 states and have had the amazing opportunity to visit 11 countries to date!</p>",
+  "title": "countries visited"
 }
