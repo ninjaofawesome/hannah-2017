@@ -1,15 +1,44 @@
 import React, { Component, PropTypes } from 'react';
 
-class TextArea extends Component {
+class TextBlock extends Component {
   render() {
+    const copy = this.props.copy.content;
+    const section = this.props.section;
 
-    return(
-      <h1> Yo.</h1>
-    );
+    if(!copy) {
+      return null;
+    }
+
+    if (section === "intro") {
+      return(
+        <div className={`textblock__${section}`}>
+          {copy.introCopy}
+        </div>
+      );
+    }
+
+    if (section === "other") {
+      return(
+        <div className={`textblock__${section}`}>
+          {copy.otherCopy}
+        </div>
+      );
+    }
+    if (section === "work") {
+      return(
+        <div className={`textblock__${section}`}>
+          {copy.workCopy}
+        </div>
+      );
+    }
+
+    return null;
   }
 }
 
-TextArea.propTypes = {
-  copy: PropTypes.shape({}),
-  className: PropTypes.string
+TextBlock.propTypes = {
+  copy: PropTypes.object,
+  section: PropTypes.string
 }
+
+export default TextBlock;

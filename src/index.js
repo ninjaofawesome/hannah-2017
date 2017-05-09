@@ -5,24 +5,34 @@ import Description from '../src/components/description/description';
 import JobData from '../src/components/description/job_data.json';
 import CountriesData from '../src/components/description/vacation_data.json';
 import CopyData from '../src/components/text_block/text_data.json';
-import TextArea from '../src/components/text_block/text_block';
+import TextBlock from '../src/components/text_block/text_block';
+import Contact from '../src/components/contact/contact';
 
 import './index.css';
 
 ReactDOM.render(
   <div className="main" >
-    <TextArea
+    <TextBlock
       copy={CopyData}
-      className="intro-info"
+      section="intro"
     />
     <Description
       data={JobData}
       type="jobs"
     />
+    <TextBlock
+      copy={CopyData}
+      section="other"
+    />
     <Description
       data={CountriesData}
       type="countries"
     />
+    <TextBlock
+      copy={CopyData}
+      section="work"
+    />
+    <Contact />
   </div>,
   document.getElementById('root')
 );

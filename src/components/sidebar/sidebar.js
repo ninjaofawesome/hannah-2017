@@ -55,7 +55,7 @@ class Sidebar extends Component {
 }
 
 Sidebar.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({})),
+  data: PropTypes.shape({}),
   className: PropTypes.string,
   type: PropTypes.string,
   title: PropTypes.string
