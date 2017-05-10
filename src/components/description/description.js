@@ -3,6 +3,11 @@ import Sidebar from '../sidebar/sidebar';
 
 
 class Description extends Component {
+
+  createMarkup(finalCopy) {
+    return {__html: finalCopy}
+  }
+
   render() {
     const {
       data,
@@ -16,9 +21,7 @@ class Description extends Component {
 
     return(
       <div className={`${type}__description-container`}>
-       <div className={`${type}__text-area`}>
-          {copy}
-        </div>
+       <div className={`${type}__text-area`} dangerouslySetInnerHTML={this.createMarkup(copy)} />
         <Sidebar
         data={items}
         className={type}

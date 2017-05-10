@@ -1,38 +1,36 @@
 import React, { Component, PropTypes } from 'react';
 
 class TextBlock extends Component {
+
+  createMarkup(finalCopy) {
+    return {__html: finalCopy}
+  }
+
   render() {
     const copy = this.props.copy.content;
     const section = this.props.section;
+    let finalCopy;
 
     if(!copy) {
       return null;
     }
 
     if (section === "intro") {
-      return(
-        <div className={`textblock__${section}`}>
-          {copy.introCopy}
-        </div>
-      );
+      finalCopy = copy.introCopy;
     }
+
 
     if (section === "other") {
-      return(
-        <div className={`textblock__${section}`}>
-          {copy.otherCopy}
-        </div>
-      );
-    }
-    if (section === "work") {
-      return(
-        <div className={`textblock__${section}`}>
-          {copy.workCopy}
-        </div>
-      );
+      finalCopy = copy.otherCopy;
     }
 
-    return null;
+    if (section === "work") {
+      finalCopy = copy.workCopy;
+    }
+
+    return(
+      <div className={`textblock__${section}`} dangerouslySetInnerHTML={this.createMarkup(finalCopy)} />
+    );
   }
 }
 
