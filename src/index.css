@@ -12,10 +12,12 @@ a {
   color: #293e6a;
   text-decoration: none;
   outline: 0; }
-  a:active, a:focus, a:hover {
-    color: #ff6699; }
-  a:visted {
-    color: #293e6a; }
+
+a:active, a:focus, a:hover {
+  color: #ff6699; }
+
+a:visted {
+  color: #293e6a; }
 
 body,
 html {
