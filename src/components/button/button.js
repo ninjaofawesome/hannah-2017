@@ -2,20 +2,14 @@ import React, { Component, PropTypes } from 'react';
 
 class Button extends Component {
 
-  constructor(props){
-    super(props);
 
-    const confirmation = {
-
-    }
-
-  }
 
   render(){
     const confirm = this.props.confirm;
 
     let buttonText = (confirm === true) ? 'Yes!' : 'Nope.'
 
+    console.log(this.props)
     return (
       <button onClick={this.props.toggleText}>{buttonText}</button>
     );
@@ -25,7 +19,8 @@ class Button extends Component {
 
 Button.propTypes = {
   confirm: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
+  data: PropTypes.func
 }
 
 export default Button;

@@ -6,14 +6,7 @@
     },
     {
       "confirm": false,
-      "copy":  "<p>That's ok too, life gets busy.</p>  <p>In the meantime, you might want to.. </p>
-        <ul>
-          <li>Check out <a href='https://github.com/ninjaofawesome?tab=repositories' target='_blank'>My GitHub Profile</a></li>
-          <li>Take a peek at <a href='https://www.linkedin.com/in/hannahnordgren/' target='_blank'>My LinkedIn Profile</a></li>
-          <li>
-          <a href='mailto:hey@hereshannahs.info?Coffee'>Email me.</a>  (I like emails.)
-          </li>
-        </ul>"
+      "copy":  "<p>That's ok too, life gets busy.</p>  <p>In the meantime, you might want to.. </p><ul><li>Check out <a href='https://github.com/ninjaofawesome?tab=repositories' target='_blank'>My GitHub Profile</a></li><li>Take a peek at <a href='https://www.linkedin.com/in/hannahnordgren/' target='_blank'>My LinkedIn Profile</a></li><li><a href='mailto:hey@hereshannahs.info?Coffee'>Email me.</a>  (I like emails.)</li></ul>"
     }
   ]
 }

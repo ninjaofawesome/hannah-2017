@@ -38,7 +38,8 @@ class TextBlock extends Component {
 
 TextBlock.propTypes = {
   copy: PropTypes.object,
-  section: PropTypes.string
+  section: PropTypes.string,
+  data: PropTypes.shape({})
 }
 
 export default TextBlock;
