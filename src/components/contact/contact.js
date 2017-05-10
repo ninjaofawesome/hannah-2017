@@ -1,35 +1,36 @@
 import React, { Component } from 'react';
 import Button from '../button/button';
-import ContactData from './contact_data.json';
+import ContactBox from './contact_box/contact_box';
 
 class Contact extends Component {
 
-  constructor(props){
-    super(props);
-    this.toggleText = this.toggleText.bind(this);
-
-    this.state = { confirm : []}
-  }
-
-  toggleText(){
-    this.setState({ confirm: ContactData.contact })
-  }
-
   render(){
 
-    console.log(this.toggleText);
+    console.log(this.props);
     return(
       <div className="contact">
+        <h2 className="contact__title">It would be a pleasure to meet you, though.</h2>
+        <p className="contact__cta-text">You've heard a lot about me, I'd like to know more about you.  Want to get coffee?</p>
         <Button
           confirm={true}
           className="contact"
-          data={this.toggleText}
+          data={this.props.addData}
         />
         <Button
           confirm={false}
           className="contact"
-          data={this.toggleText}
+          data={this.props.addData}
         />
+        {Object
+          .keys(this.props.allData)
+          .map((key) => {
+            return(
+              <ContactBox
+              key={key}
+              details={this.props.allData[key]}
+              />
+            );
+          })}
       </div>
     );
   }
