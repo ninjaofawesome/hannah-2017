@@ -7,11 +7,12 @@ class ContactBox extends Component {
   }
 
   render(){
-    const copy = this.props.details.confirm.copy;
+    const copy = this.props.copy;
+    const visible = this.props.visible
 
     return(
       <div
-      className="contact__contact-box-copy"
+      className={`contact__contact-box-copy ${visible ? 'contact__contact-box-copy--visible' : 'contact__contact-box-copy--hidden'}`}
       dangerouslySetInnerHTML={this.createMarkup(copy)}
       />
     );

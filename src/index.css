@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.3.1
+ * Version 6.4.1
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -12,12 +12,10 @@ a {
   color: #293e6a;
   text-decoration: none;
   outline: 0; }
-
-a:active, a:focus, a:hover {
-  color: #ff6699; }
-
-a:visted {
-  color: #293e6a; }
+  a:active, a:focus, a:hover {
+    color: #ff6699; }
+  a:visted {
+    color: #293e6a; }
 
 body,
 html {

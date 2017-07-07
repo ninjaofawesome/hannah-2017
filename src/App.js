@@ -5,30 +5,12 @@ import CountriesData from '../src/components/description/vacation_data.json';
 import CopyData from '../src/components/text_block/text_data.json';
 import TextBlock from '../src/components/text_block/text_block';
 import Contact from '../src/components/contact/contact';
-import ContactData from '../src/components/contact/contact_data.json';
+import { isEmpty } from '../src/utils/empty_state';
 
 class App extends Component {
-  constructor() {
-    super();
-
-    this.toggleText = this.toggleText.bind(this);
-    this.addData = this.addData.bind(this);
-
-    this.state = { confirm : []}
-  }
-
-  toggleText(){
-    this.setState({ confirm: ContactData.contact })
-  }
-
-  addData(confirmData) {
-    const confirm = {...this.state.confirm};
-    const timestamp = Date.now();
-    confirm[`confirm-${timestamp}`] = confirmData;
-    this.setState({ confirm })
-  }
 
   render (){
+
     return(
       <div className="main" >
         <TextBlock
@@ -51,10 +33,7 @@ class App extends Component {
           copy={CopyData}
           section="work"
         />
-        <Contact
-          addData={this.addData}
-          allData={this.state.confirm}
-        />
+        <Contact />
       </div>
     );
   }
