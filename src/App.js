@@ -5,7 +5,6 @@ import CountriesData from '../src/components/description/vacation_data.json';
 import CopyData from '../src/components/text_block/text_data.json';
 import TextBlock from '../src/components/text_block/text_block';
 import Contact from '../src/components/contact/contact';
-import { isEmpty } from '../src/utils/empty_state';
 
 class App extends Component {
 

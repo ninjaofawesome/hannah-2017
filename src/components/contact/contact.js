@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import ContactData from './contact_data.json'
 import ContactBox from './contact_box/contact_box';
 
@@ -7,11 +7,13 @@ class Contact extends Component {
     super();
     this.toggleData= this.toggleData.bind(this);
     this.state = {
-      visible: false
+      visible: false,
+      copy: []
     }
   }
 
-  toggleData(){
+  toggleData(confirm){
+    console.log(confirm);
     this.setState({
       visible: !this.state.visible
     })
@@ -23,29 +25,22 @@ class Contact extends Component {
     return(
       <div className="contact">
         {data.map((obj, index) => {
-          console.log(obj);
           return (
-            <div>
               <button
                 key={`button-${index}`}
                 className="button__contact-button"
-                confirm={obj.confirm}
-                onClick={this.toggleData}>{obj.button}</button>
-                <ContactBox
-                  copy={obj.copy}
-                  visible={this.state.visible}
-                />
-              </div>
+                onClick={this.toggleData}>{obj.button}
+              </button>
             );
         })}
+        <ContactBox
+          visible={this.state.visible}
+          copy={this.state.copy}
+        />
       </div>
     );
   }
 }
 
-Contact.propTypes = {
-  addData: PropTypes.func,
-  allData: PropTypes.shape({})
-}
 
 export default Contact;

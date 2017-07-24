@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import Sidebar from '../sidebar/sidebar';
 
 
@@ -32,15 +32,6 @@ class Description extends Component {
     );
   }
 
-}
-
-Description.propTypes = {
-  data: PropTypes.shape({
-    items: PropTypes.array,
-    copy: PropTypes.string,
-    title: PropTypes.string
-  }),
-  type: PropTypes.string
 }
 
 export default Description;

@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 
 class Sidebar extends Component {
 
@@ -54,11 +54,5 @@ class Sidebar extends Component {
   }
 }
 
-Sidebar.propTypes = {
-  data: PropTypes.shape({}),
-  className: PropTypes.string,
-  type: PropTypes.string,
-  title: PropTypes.string
-}
 
 export default Sidebar;
