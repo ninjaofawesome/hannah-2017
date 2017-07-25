@@ -1,4 +1,5 @@
-$sans-serif: Helvetica, Arial, sans-serif;
+$sans-serif: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$serif: Georgia, Times, "Times New Roman", serif;
 
 a {
   @include link-transition(350ms);
@@ -17,4 +18,12 @@ a {
     color: $blue;
   }
 
+}
+
+@mixin PinkTitle($size: rem-calc(100)) {
+  color: $semple-pink;
+  font-family: $sans-serif;
+  text-align: center;
+  font-size: $size;
+  line-height: calc(#{$size} * 1.05);
 }
