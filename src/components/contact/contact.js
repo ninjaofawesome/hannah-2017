@@ -3,21 +3,22 @@ import ContactData from './contact_data.json'
 import ContactBox from './contact_box/contact_box';
 
 class Contact extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.toggleData= this.toggleData.bind(this);
     this.state = {
       visible: false,
-      copy: []
+      copy: {}
     }
   }
 
-  toggleData(confirm){
-    console.log(confirm);
+  toggleData(copy){
     this.setState({
-      visible: !this.state.visible
+      visible: !this.state.visible,
+      copy: copy
     })
   }
+
 
   render(){
     const data = ContactData.contact;
@@ -25,11 +26,12 @@ class Contact extends Component {
     return(
       <div className="contact">
         {data.map((obj, index) => {
-          return (
+          const copy = obj.copy
+           return (
               <button
                 key={`button-${index}`}
                 className="button__contact-button"
-                onClick={this.toggleData}>{obj.button}
+                onClick={() => this.toggleData(copy)}>{obj.button}
               </button>
             );
         })}

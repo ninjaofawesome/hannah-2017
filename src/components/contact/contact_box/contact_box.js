@@ -8,8 +8,7 @@ class ContactBox extends Component {
 
   render(){
     const visible = this.props.visible;
-    const copy = this.props.copy
-    console.log(this.props)
+    const copy = this.props.copy;
 
     return(
       <div
