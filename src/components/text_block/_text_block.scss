@@ -1,0 +1,13 @@
+.textblock {
+  &__intro {
+    @include flex-grid-column(12);
+    h2 {
+      @include PinkTitle();
+      margin-top: rem-calc(50);
+    }
+
+    p{
+      font-family: $serif;
+    }
+  }
+}

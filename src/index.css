@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.3.1
+ * Version 6.4.1
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -27,28 +27,29 @@ html {
 body {
   background-color: #fff;
   color: #17233c;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
   line-height: 16px; }
 
-.App {
-  text-align: center; }
+.textblock__intro {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 100%; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+@media print, screen and (min-width: 40em) {
+  .textblock__intro {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; }
+.textblock__intro h2 {
+  color: #fd6bbe;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  font-size: 6.25rem;
+  line-height: calc(6.25rem * 1.05);
+  margin-top: 3.125rem; }
 
-.App-intro {
-  font-size: large; }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+.textblock__intro p {
+  font-family: Georgia, Times, "Times New Roman", serif; }

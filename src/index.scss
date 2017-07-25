@@ -2,12 +2,14 @@
 @import '../node_modules/foundation-sites/scss/foundation.scss';
 
 // base styles
+@import '../src/styles/variables.scss';
 @import '../src/styles/mixins.scss';
 @import '../src/styles/colors.scss';
 @import '../src/styles/type.scss';
 @import '../src/styles/structure.scss';
 
-// components
-
 // pages
 @import '../src/pages/homepage/homepage.scss';
+
+// components
+@import '../src/components/text_block/text_block.scss';
