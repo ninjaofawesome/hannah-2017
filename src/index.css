@@ -4,6 +4,12 @@
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
+@font-face {
+  font-family: 'oldsansblack';
+  src: url("fonts/oldsansblack/oldsansblack-webfont.woff2") format("woff2"), url("fonts/oldsansblack/oldsansblack-webfont.woff") format("woff"), url("fonts/oldsansblack/OldSansBlack.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
 a {
   -webkit-transition: all 350ms ease-out;
   -moz-transition: all 350ms ease-out;
@@ -26,12 +32,18 @@ html {
 
 body {
   background-color: #fff;
-  color: #17233c;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #000080;
   font-size: 16px;
   line-height: 16px; }
 
-.textblock__intro {
+.main {
+  color: #000080;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.25rem;
+  line-height: calc(1.25rem * 1.15);
+  font-weight: 400; }
+
+.text__intro {
   flex: 0 0 100%;
   max-width: 100%;
   padding-right: 0.625rem;
@@ -39,17 +51,90 @@ body {
   max-width: 100%; }
 
 @media print, screen and (min-width: 40em) {
-  .textblock__intro {
+  .text__intro {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem; } }
 
-.textblock__intro h2 {
+.text__intro h2 {
   color: #fd6bbe;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  text-align: center;
+  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
   font-size: 6.25rem;
   line-height: calc(6.25rem * 1.05);
-  margin-top: 3.125rem; }
+  font-weight: 500;
+  margin-top: 3.125rem;
+  text-align: center; }
 
-.textblock__intro p {
-  font-family: Georgia, Times, "Times New Roman", serif; }
+.text__intro p {
+  color: #000080;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  line-height: calc(1.5rem * 1.15);
+  font-weight: 400; }
+
+.jobs__description-container {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%; }
+
+.jobs__text-area {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 66.66667%; }
+
+@media print, screen and (min-width: 40em) {
+  .jobs__text-area {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
+
+.jobs__sidebar {
+  flex: 0 0 29.16667%;
+  max-width: 29.16667%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 29.16667%; }
+
+@media print, screen and (min-width: 40em) {
+  .jobs__sidebar {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
+
+.jobs__sidebar-title {
+  color: #fd6bbe;
+  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+  font-size: 3.125rem;
+  line-height: calc(3.125rem * 1.05);
+  font-weight: 500;
+  margin: 0 0 0.625rem 0;
+  display: inline-block;
+  position: relative; }
+
+.jobs__sidebar-title:after {
+  display: inline-block;
+  content: "";
+  height: 0.625rem;
+  width: 100%;
+  background-color: #fef65b;
+  position: absolute;
+  top: calc(3.125rem + rem-calc(10));
+  left: 0; }
+
+.jobs__sidebar-list {
+  color: #000080;
+  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: calc(1.25rem * 1.15);
+  font-weight: 400;
+  list-style-type: none;
+  padding: 0; }
+
+.jobs__sidebar-position {
+  color: #000080;
+  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+  font-size: 1.5625rem;
+  line-height: calc(1.5625rem * 1.15);
+  font-weight: 400; }

@@ -1,0 +1,44 @@
+.jobs {
+  &__description-container {
+    @include max-width-row();
+  }
+
+  &__text-area {
+    @include flex-grid-column(8);
+  }
+
+  &__sidebar {
+    @include flex-grid-column(3.5);
+  }
+
+  &__sidebar-title {
+    @include TitleUnderline(rem-calc(50), $semple-pink, $semple-yellow);
+    // @include PinkTitle($size: rem-calc(50));
+    // margin: 0 0 rem-calc(10) 0;
+    // display: inline-block;
+    // position: relative;
+
+    // &:after {
+    //   display: inline-block;
+    //   content: "";
+    //   height: rem-calc(10);
+    //   width: 100%;
+    //   background-color: $semple-yellow;
+    //   position: absolute;
+    //   top: rem-calc(60);
+    //   left: 0;
+    // }
+  }
+
+  &__sidebar-list {
+    @include BodyTypeSS();
+
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__sidebar-position {
+    @include BodyTypeSS(rem-calc(25), $brand-navy);
+  }
+
+}

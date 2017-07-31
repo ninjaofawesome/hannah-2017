@@ -1,13 +1,15 @@
-.textblock {
+.text {
   &__intro {
     @include flex-grid-column(12);
+
     h2 {
       @include PinkTitle();
       margin-top: rem-calc(50);
+      text-align: center;
     }
 
     p{
-      font-family: $serif;
+      @include BodyType($size: rem-calc(24), $color: $brand-navy);
     }
   }
 }

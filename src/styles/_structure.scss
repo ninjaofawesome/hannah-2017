@@ -6,8 +6,11 @@ html {
 
 body {
   background-color: $white;
-  color: $navy;
-  font-family: $serif;
+  color: $brand-navy;
   font-size: 16px;
   line-height: 16px;
+}
+
+.main {
+  @include BodyType();
 }

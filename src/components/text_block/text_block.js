@@ -29,7 +29,7 @@ class TextBlock extends Component {
     }
 
     return(
-      <div className={`textblock__${section}`} dangerouslySetInnerHTML={this.createMarkup(finalCopy)} />
+      <div className={`text__${section}`} dangerouslySetInnerHTML={this.createMarkup(finalCopy)} />
     );
   }
 }

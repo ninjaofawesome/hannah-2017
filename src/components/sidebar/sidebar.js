@@ -16,7 +16,7 @@ class Sidebar extends Component {
     if (type === 'countries') {
       eachItem = data.map((item) => {
         return (item.map((obj, index) => {
-          return <li key={index} className={`${className}-sidebar__list-item`}>{obj.country}</li>;
+          return <li key={index} className={`${className}__sidebar--list-item`}>{obj.country}</li>;
         }));
       });
     }
@@ -25,9 +25,9 @@ class Sidebar extends Component {
       eachItem = data.map((item) => {
         return (item.map((obj, index) => {
           return(
-            <li key={index} className={`${className}-sidebar__list-item`}>
-              <span className={`${className}-sidebar__position`}>{obj.title}</span>
-              <span className={`${className}-sidebar__company`}>{obj.company}</span>
+            <li key={index} className={`${className}__sidebar-list-item`}>
+              <span className={`${className}__sidebar-position`}>{obj.title}: </span>
+              <span className={`${className}__sidebar-company`}>{obj.company}</span>
             </li>
           );
         }));
@@ -44,9 +44,9 @@ class Sidebar extends Component {
     const title = this.props.title;
 
     return(
-      <div className={`${className}-sidebar`}>
-        <h2 className={`${className}-sidebar__title`}>{title}</h2>
-        <ul className={`${className}-sidebar__list`}>
+      <div className={`${className}__sidebar`}>
+        <h2 className={`${className}__sidebar-title`}>{title}</h2>
+        <ul className={`${className}__sidebar-list`}>
           {this.listItems(data)}
         </ul>
       </div>

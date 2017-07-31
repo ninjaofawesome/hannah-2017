@@ -4,3 +4,8 @@
   -o-transition: all $time ease-out;
   transition: all $time ease-out;
 }
+
+@mixin max-width-row(){
+  @include flex-grid-row();
+  max-width: 100%;
+}
