@@ -6,7 +6,6 @@ class Contact extends Component {
 
   render(){
 
-    console.log(this.props);
     return(
       <div className="contact">
         <h2 className="contact__title">It would be a pleasure to meet you, though.</h2>

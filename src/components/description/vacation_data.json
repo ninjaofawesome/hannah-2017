@@ -51,6 +51,6 @@
       "dates": [2017]
     }
   ],
-  "copy": "<p>I'm also a voracious traveller. I've been to 47 out of 50 states and have had the amazing opportunity to visit 11 countries to date!</p>",
+  "copy": "<p>My first language was Ruby but my favorite (and most frequently used) language is JavaScript.</p><p>I'm a big fan of BEM in my SCSS, I find flattening my nested classes to be quite satisfying.</p><p>I like to go to go to meetups.</p> <p>I am usually tinkering on a side project in my spare time as well.</p> <p>And sometimes I keep my blog up.</p><p>I'm also a voracious traveller. I've been to 47 out of 50 states and have had the amazing opportunity to visit 11 countries to date!</p>",
   "title": "countries visited"
 }

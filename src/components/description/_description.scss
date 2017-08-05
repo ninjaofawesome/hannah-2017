@@ -37,7 +37,7 @@
 
   &__text-area {
     @include flex-grid-column(8);
-    @include BodyType($size: rem-calc(35), $color: $brand-navy);
+    @include BodyType($size: rem-calc(22), $color: $brand-navy);
   }
 
   &__sidebar {

@@ -19,15 +19,18 @@ class Description extends Component {
        return element !== undefined;
     });
 
+    console.log(data);
+
     return(
       <div className={`${type}__description-container`}>
-       <div className={`${type}__text-area`} dangerouslySetInnerHTML={this.createMarkup(copy)} />
+        { data.jobs ? <div className={`${type}__text-area`} dangerouslySetInnerHTML={this.createMarkup(copy)} /> : '' }
         <Sidebar
         data={items}
         className={type}
         type={type}
         title={data.title}
         />
+        { data.countries ? <div className={`${type}__text-area`} dangerouslySetInnerHTML={this.createMarkup(copy)} /> : '' }
       </div>
     );
   }

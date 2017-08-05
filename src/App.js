@@ -39,10 +39,6 @@ class App extends Component {
           data={JobData}
           type="jobs"
         />
-        <TextBlock
-          copy={CopyData}
-          section="other"
-        />
 
         <Description
           data={CountriesData}
