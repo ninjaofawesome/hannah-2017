@@ -71,6 +71,30 @@ body {
   line-height: calc(1.5rem * 1.15);
   font-weight: 400; }
 
+.text__other {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 100%; }
+
+@media print, screen and (min-width: 40em) {
+  .text__other {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
+
+.text__countries {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 100%; }
+
+@media print, screen and (min-width: 40em) {
+  .text__countries {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
+
 .jobs__description-container {
   max-width: 75rem;
   margin-right: auto;
@@ -120,7 +144,7 @@ body {
   width: 100%;
   background-color: #fef65b;
   position: absolute;
-  top: calc(3.125rem + rem-calc(10));
+  top: calc(3.125rem + 10px);
   left: 0; }
 
 .jobs__sidebar-list {
@@ -138,3 +162,44 @@ body {
   font-size: 1.5625rem;
   line-height: calc(1.5625rem * 1.15);
   font-weight: 400; }
+
+.countries__sidebar {
+  flex: 0 0 29.16667%;
+  max-width: 29.16667%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 29.16667%; }
+
+@media print, screen and (min-width: 40em) {
+  .countries__sidebar {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
+
+.countries__sidebar-title {
+  color: #fd6bbe;
+  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+  font-size: 3.125rem;
+  line-height: calc(3.125rem * 1.05);
+  font-weight: 500;
+  margin: 0 0 0.625rem 0;
+  display: inline-block;
+  position: relative; }
+
+.countries__sidebar-title:after {
+  display: inline-block;
+  content: "";
+  height: 0.625rem;
+  width: 100%;
+  background-color: #fef65b;
+  position: absolute;
+  top: calc(3.125rem + 10px);
+  left: 0; }
+
+.countries__sidebar-list {
+  color: #000080;
+  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+  font-size: 1.875rem;
+  line-height: calc(1.875rem * 1.15);
+  font-weight: 400;
+  list-style-type: none;
+  padding: 0; }

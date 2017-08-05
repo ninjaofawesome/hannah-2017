@@ -28,6 +28,7 @@ $serif: Georgia, Times, "Times New Roman", serif;
 }
 
 @mixin TitleUnderline($size: rem-calc(100), $type-color: $semple-pink, $ucolor: $semple-yellow) {
+
   color: $type-color;
   font-family: $sans-serif;
   font-size: $size;
@@ -44,7 +45,7 @@ $serif: Georgia, Times, "Times New Roman", serif;
     width: 100%;
     background-color: $ucolor;
     position: absolute;
-    top: rem-calc(calc(#{$size} + 10px);
+    top: calc(#{$size} + 10px);
     left: 0;
   }
 }
