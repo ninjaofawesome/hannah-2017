@@ -108,7 +108,12 @@ body {
   max-width: 66.66667%;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 66.66667%; }
+  max-width: 66.66667%;
+  color: #000080;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 2.1875rem;
+  line-height: calc(2.1875rem * 1.15);
+  font-weight: 400; }
 
 @media print, screen and (min-width: 40em) {
   .jobs__text-area {
@@ -162,6 +167,31 @@ body {
   font-size: 1.5625rem;
   line-height: calc(1.5625rem * 1.15);
   font-weight: 400; }
+
+.countries__description-container {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%; }
+
+.countries__text-area {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 66.66667%;
+  color: #000080;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 2.1875rem;
+  line-height: calc(2.1875rem * 1.15);
+  font-weight: 400; }
+
+@media print, screen and (min-width: 40em) {
+  .countries__text-area {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
 
 .countries__sidebar {
   flex: 0 0 29.16667%;

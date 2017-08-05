@@ -43,6 +43,7 @@ class App extends Component {
           copy={CopyData}
           section="other"
         />
+
         <Description
           data={CountriesData}
           type="countries"
@@ -51,6 +52,7 @@ class App extends Component {
           copy={CopyData}
           section="work"
         />
+
         <Contact
           addData={this.addData}
           allData={this.state.confirm}

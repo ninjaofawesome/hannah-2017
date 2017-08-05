@@ -5,6 +5,7 @@
 
   &__text-area {
     @include flex-grid-column(8);
+    @include BodyType($size: rem-calc(35), $color: $brand-navy);
   }
 
   &__sidebar {
@@ -29,6 +30,15 @@
 }
 
 .countries {
+
+  &__description-container {
+    @include max-width-row();
+  }
+
+  &__text-area {
+    @include flex-grid-column(8);
+    @include BodyType($size: rem-calc(35), $color: $brand-navy);
+  }
 
   &__sidebar {
     @include flex-grid-column(3.5);
