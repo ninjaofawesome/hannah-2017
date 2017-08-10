@@ -40,10 +40,4 @@ class Button extends Component {
 
 }
 
-// Button.propTypes = {
-//   confirm: PropTypes.bool,
-//   className: PropTypes.string,
-//   data: PropTypes.func
-// }
-
 export default Button;

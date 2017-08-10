@@ -1,26 +1,19 @@
-.jobs {
+.jobs,
+.countries {
   &__description-container {
     @include max-width-row();
   }
 
   &__text-area {
     @include flex-grid-column(8);
-    @include BodyType($size: rem-calc(35), $color: $brand-navy);
   }
 
   &__sidebar {
-    @include flex-grid-column(3.5);
+    @include flex-grid-column(3);
   }
 
   &__sidebar-title {
     @include TitleUnderline(rem-calc(50), $semple-pink, $semple-yellow);
-  }
-
-  &__sidebar-list {
-    @include BodyTypeSS();
-
-    list-style-type: none;
-    padding: 0;
   }
 
   &__sidebar-position {
@@ -29,29 +22,34 @@
 
 }
 
-.countries {
-
-  &__description-container {
-    @include max-width-row();
-  }
-
-  &__text-area {
-    @include flex-grid-column(8);
-    @include BodyType($size: rem-calc(22), $color: $brand-navy);
-  }
-
-  &__sidebar {
-    @include flex-grid-column(3.5);
-  }
-
-  &__sidebar-title {
-    @include TitleUnderline(rem-calc(50), $semple-pink, $semple-yellow);
-  }
+.jobs {
 
   &__sidebar-list {
-    @include BodyTypeSS(rem-calc(30), $brand-navy);
+    @include BodyTypeSS();
 
     list-style-type: none;
     padding: 0;
+  }
+
+  &__text-area {
+    @include BodyType($size: rem-calc(28), $color: $brand-navy);
+    margin-top: rem-calc(30);
+  }
+}
+
+
+.countries {
+
+  &__sidebar-list {
+    @include BodyTypeSS(rem-calc(28), $brand-navy);
+
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__text-area {
+    @include BodyType($size: rem-calc(24), $color: $brand-navy);
+
+    margin-top: rem-calc(35);
   }
 }

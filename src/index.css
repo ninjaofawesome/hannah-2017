@@ -40,7 +40,7 @@ body {
   color: #000080;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1.25rem;
-  line-height: calc(1.25rem * 1.15);
+  line-height: calc(1.25rem * 1.25);
   font-weight: 400; }
 
 .text__intro {
@@ -67,21 +67,9 @@ body {
 .text__intro p {
   color: #000080;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 1.5rem;
-  line-height: calc(1.5rem * 1.15);
+  font-size: 2.1875rem;
+  line-height: calc(2.1875rem * 1.25);
   font-weight: 400; }
-
-.text__other {
-  flex: 0 0 100%;
-  max-width: 100%;
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 100%; }
-
-@media print, screen and (min-width: 40em) {
-  .text__other {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem; } }
 
 .text__countries {
   flex: 0 0 100%;
@@ -95,79 +83,26 @@ body {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem; } }
 
-.jobs__description-container {
-  max-width: 75rem;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-flow: row wrap;
+.text__work {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
   max-width: 100%; }
 
-.jobs__text-area {
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%;
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 66.66667%;
+@media print, screen and (min-width: 40em) {
+  .text__work {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
+
+.text__work p {
   color: #000080;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 2.1875rem;
-  line-height: calc(2.1875rem * 1.15);
+  font-size: 1.375rem;
+  line-height: calc(1.375rem * 1.25);
   font-weight: 400; }
 
-@media print, screen and (min-width: 40em) {
-  .jobs__text-area {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem; } }
-
-.jobs__sidebar {
-  flex: 0 0 29.16667%;
-  max-width: 29.16667%;
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 29.16667%; }
-
-@media print, screen and (min-width: 40em) {
-  .jobs__sidebar {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem; } }
-
-.jobs__sidebar-title {
-  color: #fd6bbe;
-  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
-  font-size: 3.125rem;
-  line-height: calc(3.125rem * 1.05);
-  font-weight: 500;
-  margin: 0 0 0.625rem 0;
-  display: inline-block;
-  position: relative; }
-
-.jobs__sidebar-title:after {
-  display: inline-block;
-  content: "";
-  height: 0.625rem;
-  width: 100%;
-  background-color: #fef65b;
-  position: absolute;
-  top: calc(3.125rem + 10px);
-  left: 0; }
-
-.jobs__sidebar-list {
-  color: #000080;
-  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
-  line-height: calc(1.25rem * 1.15);
-  font-weight: 400;
-  list-style-type: none;
-  padding: 0; }
-
-.jobs__sidebar-position {
-  color: #000080;
-  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
-  font-size: 1.5625rem;
-  line-height: calc(1.5625rem * 1.15);
-  font-weight: 400; }
-
+.jobs__description-container,
 .countries__description-container {
   max-width: 75rem;
   margin-right: auto;
@@ -176,35 +111,35 @@ body {
   flex-flow: row wrap;
   max-width: 100%; }
 
+.jobs__text-area,
 .countries__text-area {
   flex: 0 0 66.66667%;
   max-width: 66.66667%;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 66.66667%;
-  color: #000080;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 1.375rem;
-  line-height: calc(1.375rem * 1.15);
-  font-weight: 400; }
+  max-width: 66.66667%; }
 
 @media print, screen and (min-width: 40em) {
+  .jobs__text-area,
   .countries__text-area {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem; } }
 
+.jobs__sidebar,
 .countries__sidebar {
-  flex: 0 0 29.16667%;
-  max-width: 29.16667%;
+  flex: 0 0 25%;
+  max-width: 25%;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 29.16667%; }
+  max-width: 25%; }
 
 @media print, screen and (min-width: 40em) {
+  .jobs__sidebar,
   .countries__sidebar {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem; } }
 
+.jobs__sidebar-title,
 .countries__sidebar-title {
   color: #fd6bbe;
   font-family: "oldsansblack", Arial, Helvetica, sans-serif;
@@ -215,6 +150,7 @@ body {
   display: inline-block;
   position: relative; }
 
+.jobs__sidebar-title:after,
 .countries__sidebar-title:after {
   display: inline-block;
   content: "";
@@ -225,11 +161,61 @@ body {
   top: calc(3.125rem + 10px);
   left: 0; }
 
-.countries__sidebar-list {
+.jobs__sidebar-position,
+.countries__sidebar-position {
   color: #000080;
   font-family: "oldsansblack", Arial, Helvetica, sans-serif;
-  font-size: 1.875rem;
-  line-height: calc(1.875rem * 1.15);
+  font-size: 1.5625rem;
+  line-height: calc(1.5625rem * 1.25);
+  font-weight: 400; }
+
+.jobs__sidebar-list {
+  color: #000080;
+  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: calc(1.25rem * 1.25);
   font-weight: 400;
   list-style-type: none;
   padding: 0; }
+
+.jobs__text-area {
+  color: #000080;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.75rem;
+  line-height: calc(1.75rem * 1.25);
+  font-weight: 400;
+  margin-top: 1.875rem; }
+
+.countries__sidebar-list {
+  color: #000080;
+  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  line-height: calc(1.75rem * 1.25);
+  font-weight: 400;
+  list-style-type: none;
+  padding: 0; }
+
+.countries__text-area {
+  color: #000080;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  line-height: calc(1.5rem * 1.25);
+  font-weight: 400;
+  margin-top: 2.1875rem; }
+
+.contact__title {
+  color: #fd6bbe;
+  font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+  font-size: 4.6875rem;
+  line-height: calc(4.6875rem * 1.05);
+  font-weight: 500;
+  text-align: center; }
+
+.contact__cta-text {
+  color: #000080;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 2.1875rem;
+  line-height: calc(2.1875rem * 1.25);
+  font-weight: 400;
+  text-align: center;
+  margin-top: -1.5625rem; }

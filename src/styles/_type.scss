@@ -54,7 +54,7 @@ $serif: Georgia, Times, "Times New Roman", serif;
   color: $color;
   font-family: $serif;
   font-size: $size;
-  line-height: calc(#{$size} * 1.15);
+  line-height: calc(#{$size} * 1.25);
   font-weight: 400;
 }
 
@@ -62,7 +62,7 @@ $serif: Georgia, Times, "Times New Roman", serif;
   color: $color;
   font-family: $sans-serif;
   font-size: $size;
-  line-height: calc(#{$size} * 1.15);
+  line-height: calc(#{$size} * 1.25);
   font-weight: 400;
 }
 

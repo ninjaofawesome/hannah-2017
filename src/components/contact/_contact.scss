@@ -1,0 +1,15 @@
+.contact {
+
+  &__title {
+    @include PinkTitle(rem-calc(75));
+
+    text-align: center;
+  }
+
+  &__cta-text {
+    @include BodyType(rem-calc(35), $brand-navy);
+
+    text-align: center;
+    margin-top: rem-calc(-25);
+  }
+}
