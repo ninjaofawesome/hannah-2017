@@ -1,6 +1,8 @@
 .text {
   &__intro {
-    @include flex-grid-column(12);
+    @include flex-grid-column(10);
+    display: block;
+    margin: 0 auto;
 
     h2 {
       @include PinkTitle();
@@ -15,11 +17,15 @@
 
 
   &__countries {
-     @include flex-grid-column(12);
+     @include flex-grid-column(10);
+     display: block;
+     margin: 0 auto;
   }
 
   &__work {
-    @include flex-grid-column(12);
+    @include flex-grid-column(10);
+    display: block;
+    margin: 0 auto;
 
     p{
       @include BodyType($size: rem-calc(22), $color: $brand-navy);

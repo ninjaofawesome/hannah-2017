@@ -11,7 +11,6 @@ class Button extends Component {
   addText(event) {
     event.preventDefault();
 
-    console.log('hiiiieeee!');
     let confirm =  {
       "copy":  "<p>Great! Drop me a line at <a href='mailto:hey@hereshannahs.info?Coffee'>hey@hereshannahs.info</a> and we'll caffinate.</p>"
     }

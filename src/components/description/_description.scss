@@ -1,15 +1,24 @@
 .jobs,
 .countries {
-  &__description-container {
+  &__description-row {
     @include max-width-row();
   }
 
+  &__description-container {
+    @include flex-grid-column(10);
+
+    display: block;
+    margin: rem-calc(10) auto;
+    display: flex;
+    justify-content: center;
+  }
+
   &__text-area {
-    @include flex-grid-column(8);
+    width: 75%;
   }
 
   &__sidebar {
-    @include flex-grid-column(3);
+    width: 25%;
   }
 
   &__sidebar-title {
@@ -23,6 +32,13 @@
 }
 
 .jobs {
+
+  &__text-area {
+
+    p{
+      margin-right: rem-calc(10);
+    }
+  }
 
   &__sidebar-list {
     @include BodyTypeSS();
@@ -39,6 +55,13 @@
 
 
 .countries {
+
+  &__text-area {
+
+    p{
+      margin-left: rem-calc(15);
+    }
+  }
 
   &__sidebar-list {
     @include BodyTypeSS(rem-calc(28), $brand-navy);

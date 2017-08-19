@@ -44,11 +44,13 @@ body {
   font-weight: 400; }
 
 .text__intro {
-  flex: 0 0 100%;
-  max-width: 100%;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 100%; }
+  max-width: 83.33333%;
+  display: block;
+  margin: 0 auto; }
 
 @media print, screen and (min-width: 40em) {
   .text__intro {
@@ -72,11 +74,13 @@ body {
   font-weight: 400; }
 
 .text__countries {
-  flex: 0 0 100%;
-  max-width: 100%;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 100%; }
+  max-width: 83.33333%;
+  display: block;
+  margin: 0 auto; }
 
 @media print, screen and (min-width: 40em) {
   .text__countries {
@@ -84,11 +88,13 @@ body {
     padding-left: 0.9375rem; } }
 
 .text__work {
-  flex: 0 0 100%;
-  max-width: 100%;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 100%; }
+  max-width: 83.33333%;
+  display: block;
+  margin: 0 auto; }
 
 @media print, screen and (min-width: 40em) {
   .text__work {
@@ -102,8 +108,8 @@ body {
   line-height: calc(1.375rem * 1.25);
   font-weight: 400; }
 
-.jobs__description-container,
-.countries__description-container {
+.jobs__description-row,
+.countries__description-row {
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto;
@@ -111,33 +117,31 @@ body {
   flex-flow: row wrap;
   max-width: 100%; }
 
-.jobs__text-area,
-.countries__text-area {
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%;
+.jobs__description-container,
+.countries__description-container {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 66.66667%; }
+  max-width: 83.33333%;
+  display: block;
+  margin: 0.625rem auto;
+  display: flex;
+  justify-content: center; }
 
 @media print, screen and (min-width: 40em) {
-  .jobs__text-area,
-  .countries__text-area {
+  .jobs__description-container,
+  .countries__description-container {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem; } }
+
+.jobs__text-area,
+.countries__text-area {
+  width: 75%; }
 
 .jobs__sidebar,
 .countries__sidebar {
-  flex: 0 0 25%;
-  max-width: 25%;
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 25%; }
-
-@media print, screen and (min-width: 40em) {
-  .jobs__sidebar,
-  .countries__sidebar {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem; } }
+  width: 25%; }
 
 .jobs__sidebar-title,
 .countries__sidebar-title {
@@ -169,6 +173,9 @@ body {
   line-height: calc(1.5625rem * 1.25);
   font-weight: 400; }
 
+.jobs__text-area p {
+  margin-right: 0.625rem; }
+
 .jobs__sidebar-list {
   color: #000080;
   font-family: "oldsansblack", Arial, Helvetica, sans-serif;
@@ -185,6 +192,9 @@ body {
   line-height: calc(1.75rem * 1.25);
   font-weight: 400;
   margin-top: 1.875rem; }
+
+.countries__text-area p {
+  margin-left: 0.9375rem; }
 
 .countries__sidebar-list {
   color: #000080;

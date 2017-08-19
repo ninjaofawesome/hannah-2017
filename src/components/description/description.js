@@ -22,15 +22,17 @@ class Description extends Component {
     console.log(data);
 
     return(
-      <div className={`${type}__description-container`}>
-        { data.jobs ? <div className={`${type}__text-area`} dangerouslySetInnerHTML={this.createMarkup(copy)} /> : '' }
-        <Sidebar
-        data={items}
-        className={type}
-        type={type}
-        title={data.title}
-        />
-        { data.countries ? <div className={`${type}__text-area`} dangerouslySetInnerHTML={this.createMarkup(copy)} /> : '' }
+      <div className={`${type}__description-row`}>
+        <div className={`${type}__description-container`}>
+          { data.jobs ? <div className={`${type}__text-area`} dangerouslySetInnerHTML={this.createMarkup(copy)} /> : '' }
+          <Sidebar
+          data={items}
+          className={type}
+          type={type}
+          title={data.title}
+          />
+          { data.countries ? <div className={`${type}__text-area`} dangerouslySetInnerHTML={this.createMarkup(copy)} /> : '' }
+        </div>
       </div>
     );
   }
