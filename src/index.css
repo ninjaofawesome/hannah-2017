@@ -44,13 +44,11 @@ body {
   font-weight: 400; }
 
 .text__intro {
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%;
+  flex: 0 0 100%;
+  max-width: 100%;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 83.33333%;
-  display: block;
-  margin: 0 auto; }
+  max-width: 100%; }
 
 @media print, screen and (min-width: 40em) {
   .text__intro {
@@ -74,13 +72,11 @@ body {
   font-weight: 400; }
 
 .text__countries {
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%;
+  flex: 0 0 100%;
+  max-width: 100%;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 83.33333%;
-  display: block;
-  margin: 0 auto; }
+  max-width: 100%; }
 
 @media print, screen and (min-width: 40em) {
   .text__countries {
@@ -88,13 +84,11 @@ body {
     padding-left: 0.9375rem; } }
 
 .text__work {
-  flex: 0 0 83.33333%;
-  max-width: 83.33333%;
+  flex: 0 0 100%;
+  max-width: 100%;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
-  max-width: 83.33333%;
-  display: block;
-  margin: 0 auto; }
+  max-width: 100%; }
 
 @media print, screen and (min-width: 40em) {
   .text__work {
@@ -107,6 +101,37 @@ body {
   font-size: 1.375rem;
   line-height: calc(1.375rem * 1.25);
   font-weight: 400; }
+
+@media screen and (max-width: 63.9375em) {
+  .text__intro, .text__countries, .text__work {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    max-width: 83.33333%;
+    display: block;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 63.9375em) and (min-width: 40em) {
+  .text__intro, .text__countries, .text__work {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
+
+@media screen and (max-width: 63.9375em) {
+  .text__intro h2 {
+    color: #fd6bbe;
+    font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+    font-size: 3.125rem;
+    line-height: calc(3.125rem * 1.05);
+    font-weight: 500;
+    margin-top: 3.125rem;
+    text-align: center; }
+  .text__intro p {
+    color: #000080;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.09375rem;
+    line-height: calc(1.09375rem * 1.25);
+    font-weight: 400; } }
 
 .jobs__description-row,
 .countries__description-row {
@@ -212,6 +237,56 @@ body {
   line-height: calc(1.5rem * 1.25);
   font-weight: 400;
   margin-top: 2.1875rem; }
+
+@media screen and (max-width: 63.9375em) {
+  jobs__description-container,
+  .countries__description-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    max-width: 100%; } }
+
+@media screen and (max-width: 63.9375em) and (min-width: 40em) {
+  jobs__description-container,
+  .countries__description-container {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem; } }
+
+@media screen and (max-width: 63.9375em) {
+  jobs__text-area,
+  .countries__text-area {
+    width: 100%; }
+  jobs__sidebar,
+  .countries__sidebar {
+    width: 100%; }
+  jobs__sidebar-title,
+  .countries__sidebar-title {
+    color: #fd6bbe;
+    font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+    font-size: 3.125rem;
+    line-height: calc(3.125rem * 1.05);
+    font-weight: 500;
+    margin: 0 0 0.625rem 0;
+    display: inline-block;
+    position: relative; }
+  jobs__sidebar-title:after,
+  .countries__sidebar-title:after {
+    display: inline-block;
+    content: "";
+    height: 0.625rem;
+    width: 100%;
+    background-color: #fef65b;
+    position: absolute;
+    top: calc(3.125rem + 10px);
+    left: 0; }
+  jobs__sidebar-position,
+  .countries__sidebar-position {
+    color: #000080;
+    font-family: "oldsansblack", Arial, Helvetica, sans-serif;
+    font-size: 1.5625rem;
+    line-height: calc(1.5625rem * 1.25);
+    font-weight: 400; } }
 
 .contact__title {
   color: #fd6bbe;
