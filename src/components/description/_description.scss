@@ -15,10 +15,12 @@
 
   &__text-area {
     width: 75%;
+    // @include flex-grid-column(7);
   }
 
   &__sidebar {
     width: 25%;
+    // @include flex-grid-column(3);
   }
 
   &__sidebar-title {
@@ -77,22 +79,67 @@
   }
 }
 
+@include breakpoint(medium) {
 
-@include breakpoint(medium down) {
+  @include breakpoint(landscape){
+    .jobs,
+    .countries {
 
-  jobs,
+      &__description-container {
+        @include flex-grid-column(12);
+        display: block;
+        margin-top: 0;
+      }
+
+      &__text-area {
+        width: 100%;
+
+        p {
+          @include BodyType($size: rem-calc(17.5), $color: $brand-navy);
+          margin: 0;
+          padding:0;
+        }
+      }
+
+      &__sidebar {
+        display: none;
+      }
+
+      &__sidebar-title {
+        @include TitleUnderline(rem-calc(50), $semple-pink, $semple-yellow);
+      }
+
+      &__sidebar-position {
+        @include BodyTypeSS(rem-calc(25), $brand-navy);
+      }
+    }
+  }
+}
+
+
+@include breakpoint(small only) {
+
+  .jobs,
   .countries {
 
     &__description-container {
       @include flex-grid-column(12);
+      display: block;
+      margin-top: 0;
     }
 
     &__text-area {
       width: 100%;
+
+      p {
+        @include BodyType($size: rem-calc(17.5), $color: $brand-navy);
+        margin: 0;
+        padding:0;
+      }
     }
 
     &__sidebar {
-      width: 100%;
+      display: none;
     }
 
     &__sidebar-title {
@@ -103,5 +150,4 @@
       @include BodyTypeSS(rem-calc(25), $brand-navy);
     }
   }
-
 }

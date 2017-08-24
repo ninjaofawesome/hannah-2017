@@ -1,6 +1,8 @@
 .text {
   &__intro {
-    @include flex-grid-column(12);
+    @include flex-grid-column(10);
+    display: block;
+    margin: 0 auto;
 
     h2 {
       @include PinkTitle();
@@ -15,11 +17,15 @@
 
 
   &__countries {
-     @include flex-grid-column(12);
+    @include flex-grid-column(10);
+    display: block;
+    margin: 0 auto;
   }
 
   &__work {
-    @include flex-grid-column(12);
+    @include flex-grid-column(10);
+    display: block;
+    margin: 0 auto;
 
     p{
       @include BodyType($size: rem-calc(22), $color: $brand-navy);
@@ -27,17 +33,17 @@
   }
 }
 
-@include breakpoint(medium down) {
+@include breakpoint(small only) {
   .text {
     &__intro,
     &__countries,
     &__work {
-      @include flex-grid-column(10);
-      display: block;
-      margin: 0 auto
+      @include flex-grid-column(12);
     }
 
-    &__intro {
+    &__intro,
+    &__countries,
+    &__work {
       h2 {
         @include PinkTitle(rem-calc(50));
         margin-top: rem-calc(50);
@@ -47,7 +53,6 @@
       p{
         @include BodyType($size: rem-calc(17.5), $color: $brand-navy);
       }
-
     }
   }
 }
