@@ -12,4 +12,60 @@
     text-align: center;
     margin-top: rem-calc(-25);
   }
+
+  &__contact-wrapper {
+    @include flex-grid-row();
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__button {
+    @include link-transition(350ms);
+
+    @include PinkTitle(rem-calc(20));
+    line-height: rem-calc(15);
+
+    background-color: $semple-yellow;
+    border: 0;
+    width: rem-calc(100);
+    height: rem-calc(50);
+    padding: rem-calc(20 30);
+    margin: 0 rem-calc(1 50);
+    cursor: pointer;
+
+    &:active,
+    &:focus,
+    &:hover {
+      @include YellowTitle(rem-calc(20));
+      line-height: rem-calc(15);
+
+      background-color: $semple-pink;
+      border: 0;
+      text-transform: none;
+      outline: 0;
+    }
+  }
+
+  &__contact-box-copy {
+    bottom: 0;
+  }
+}
+
+@include breakpoint(medium down) {
+
+  .contact {
+
+    &__title {
+      @include PinkTitle(rem-calc(50));
+    }
+
+
+    &__cta-text {
+      @include BodyType(rem-calc(20), $brand-navy);
+    }
+  }
+
 }

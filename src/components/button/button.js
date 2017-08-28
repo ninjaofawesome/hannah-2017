@@ -33,7 +33,7 @@ class Button extends Component {
 
     let buttonText = (confirm === true) ? 'Yes!' : 'Nope.';
     return (
-      <button onClick={(e) => this.addText(e)}>{buttonText}</button>
+      <button className="contact__button" onClick={(e) => this.addText(e)}>{buttonText}</button>
     );
   }
 
